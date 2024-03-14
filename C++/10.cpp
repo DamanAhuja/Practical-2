@@ -40,17 +40,21 @@ int main() {
 
         Triangle triangle(side1, side2, side3);
 
-        // Calculating and displaying the area of the triangle
-        std::cout << "Area of the triangle using Heron's formula: " << triangle.area() << std::endl;
-
         // If the triangle is a right-angled triangle, calculate and display its area
-        if ((side1 * side1 + side2 * side2 == side3 * side3) ||
-            (side1 * side1 + side3 * side3 == side2 * side2) ||
-            (side2 * side2 + side3 * side3 == side1 * side1)) {
+        if (side1 * side1 + side2 * side2 == side3 * side3) {
             std::cout << "The triangle is a right-angled triangle." << std::endl;
             std::cout << "Area of the triangle using base and height: " << triangle.area(side1, side2) << std::endl;
-        } else {
-            std::cout << "The triangle is not a right-angled triangle." << std::endl;
+        }
+        else if (side1 * side1 + side3 * side3 == side2 * side2) {
+            std::cout << "The triangle is a right-angled triangle." << std::endl;
+            std::cout << "Area of the triangle using base and height: " << triangle.area(side1, side3) << std::endl;
+        }
+        else if (side2 * side2 + side3 * side3 == side1 * side1) {
+            std::cout << "The triangle is a right-angled triangle." << std::endl;
+            std::cout << "Area of the triangle using base and height: " << triangle.area(side2, side3) << std::endl;
+        }
+        else {
+            std::cout << "Area of the triangle using Heron's formula: " << triangle.area() << std::endl;
         }
     } catch (const std::invalid_argument& e) {
         std::cerr << "Invalid triangle: " << e.what() << std::endl;
