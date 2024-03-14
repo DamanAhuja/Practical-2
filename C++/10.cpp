@@ -11,10 +11,10 @@ private:
 public:
     Triangle(double s1, double s2, double s3) : side1(s1), side2(s2), side3(s3) {
         if (side1 <= 0 || side2 <= 0 || side3 <= 0) {
-            throw std::invalid_argument("All sides must be greater than 0.");
+            throw std::invalid_argument("All sides must be greater than 0");
         }
         if (side1 + side2 <= side3 || side1 + side3 <= side2 || side2 + side3 <= side1) {
-            throw std::invalid_argument("Sum of any two sides must be greater than the third side.");
+            throw std::invalid_argument("Sum of any two sides must be greater than the third side");
         }
     }
 
