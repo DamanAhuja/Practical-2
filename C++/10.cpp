@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <stdexcept>
-
+  
 class Triangle {
 private:
     double side1;
