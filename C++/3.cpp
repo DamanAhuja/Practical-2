@@ -1,7 +1,7 @@
 #include <iostream>
 #include <map>
 #include <cctype>
-
+ 
 std::map<char, int> count_alphabets(const std::string& text) {
     std::map<char, int> counts;
     for (char c : text) {
