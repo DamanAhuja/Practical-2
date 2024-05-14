@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-#include <cctype>
+#include <cctype>  
 
 // Function to show address of each character in string
 void show_address(const char* str) {
