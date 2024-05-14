@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-
+  
 int binary_search_recursive(const std::vector<int>& arr, int target, int left, int right) {
     if (left > right) {
         return -1; // Element not found
