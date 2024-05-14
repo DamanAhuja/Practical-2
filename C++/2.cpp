@@ -11,7 +11,7 @@ std::vector<int> remove_duplicates(std::vector<int>& arr) {
             result.push_back(num);
             unique_elements.insert(num);
         }
-    }
+    } 
 
     return result;
 }
