@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+#include <cmath> 
 
 double seriessum(int n) {
     double sum = 0.0;
