@@ -6,7 +6,7 @@ private:
     std::vector<std::vector<int>> mat;
     int rows;
     int cols;
-
+ 
 public:
     // Constructor
     Matrix(int rows, int cols) : rows(rows), cols(cols) {
