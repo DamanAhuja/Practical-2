@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string>
 #include <sstream>
-
+  
 void removeWhitespaces(std::string& str) {
     str.erase(remove_if(str.begin(), str.end(), ::isspace), str.end());
 }
