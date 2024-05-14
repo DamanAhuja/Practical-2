@@ -9,7 +9,7 @@ std::vector<int> merge_ordered_arrays(const std::vector<int>& arr1, const std::v
         if (arr1[i] < arr2[j]) {
             merged_array.push_back(arr1[i]);
             i++;
-        } else {
+        } else {  
             merged_array.push_back(arr2[j]);
             j++;
         }
